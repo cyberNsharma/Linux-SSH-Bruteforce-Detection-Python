@@ -1,0 +1,110 @@
+# File: failed_ssh_logs.txt
+# Description: Sample SSH authentication failure logs collected from /var/log/auth.log
+# Scenario: Simulated SSH brute-force attack from a Kali Linux machine
+# Purpose: Used for testing and validating Python-based brute-force detection scripts
+# Note: Logs are intentionally generated and sanitized for academic/lab use
+
+-------------------------------------------------------------------------------------------------------------
+
+
+Feb 01 10:49:34 Ubantu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Feb 01 10:49:34 Ubantu sshd[6243]: Server listening on 0.0.0.0 port 22.
+Feb 01 10:49:34 Ubantu sshd[6243]: Server listening on :: port 22.
+Feb 01 10:49:34 Ubantu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+-- Boot de3f6d71e8eb42999030fd78bd63c4b2 --
+Feb 01 11:16:06 Ubantu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Feb 01 11:16:07 Ubantu sshd[5629]: Server listening on 0.0.0.0 port 22.
+Feb 01 11:16:07 Ubantu sshd[5629]: Server listening on :: port 22.
+Feb 01 11:16:07 Ubantu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Feb 01 11:16:12 Ubantu sshd[5630]: Invalid user test from 192.168.56.104 port 52214
+Feb 01 11:16:24 Ubantu sshd[5630]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:16:24 Ubantu sshd[5630]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:16:26 Ubantu sshd[5630]: Failed password for invalid user test from 192.168.56.104 port 52214 ssh2
+Feb 01 11:17:01 Ubantu sshd[5630]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:03 Ubantu sshd[5630]: Failed password for invalid user test from 192.168.56.104 port 52214 ssh2
+Feb 01 11:17:08 Ubantu sshd[5630]: Connection closed by invalid user test 192.168.56.104 port 52214 [preauth]
+Feb 01 11:17:08 Ubantu sshd[5630]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:17:20 Ubantu sshd[5638]: Invalid user test from 192.168.56.104 port 35898
+Feb 01 11:17:22 Ubantu sshd[5638]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:22 Ubantu sshd[5638]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:17:24 Ubantu sshd[5638]: Failed password for invalid user test from 192.168.56.104 port 35898 ssh2
+Feb 01 11:17:26 Ubantu sshd[5638]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:28 Ubantu sshd[5638]: Failed password for invalid user test from 192.168.56.104 port 35898 ssh2
+Feb 01 11:17:33 Ubantu sshd[5638]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:34 Ubantu sshd[5638]: Failed password for invalid user test from 192.168.56.104 port 35898 ssh2
+Feb 01 11:17:34 Ubantu sshd[5638]: Connection closed by invalid user test 192.168.56.104 port 35898 [preauth]
+Feb 01 11:17:34 Ubantu sshd[5638]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:17:35 Ubantu sshd[5641]: Invalid user test from 192.168.56.104 port 41412
+Feb 01 11:17:36 Ubantu sshd[5641]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:36 Ubantu sshd[5641]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:17:38 Ubantu sshd[5641]: Failed password for invalid user test from 192.168.56.104 port 41412 ssh2
+Feb 01 11:17:43 Ubantu sshd[5641]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:45 Ubantu sshd[5641]: Failed password for invalid user test from 192.168.56.104 port 41412 ssh2
+Feb 01 11:17:47 Ubantu sshd[5641]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:49 Ubantu sshd[5641]: Failed password for invalid user test from 192.168.56.104 port 41412 ssh2
+Feb 01 11:17:50 Ubantu sshd[5641]: Connection closed by invalid user test 192.168.56.104 port 41412 [preauth]
+Feb 01 11:17:50 Ubantu sshd[5641]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:17:51 Ubantu sshd[5645]: Invalid user test from 192.168.56.104 port 35432
+Feb 01 11:17:52 Ubantu sshd[5645]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:52 Ubantu sshd[5645]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:17:54 Ubantu sshd[5645]: Failed password for invalid user test from 192.168.56.104 port 35432 ssh2
+Feb 01 11:17:57 Ubantu sshd[5645]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:17:58 Ubantu sshd[5645]: Failed password for invalid user test from 192.168.56.104 port 35432 ssh2
+Feb 01 11:18:00 Ubantu sshd[5645]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:01 Ubantu sshd[5645]: Failed password for invalid user test from 192.168.56.104 port 35432 ssh2
+Feb 01 11:18:03 Ubantu sshd[5645]: Connection closed by invalid user test 192.168.56.104 port 35432 [preauth]
+Feb 01 11:18:03 Ubantu sshd[5645]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:18:03 Ubantu sshd[5650]: Invalid user test from 192.168.56.104 port 43242
+Feb 01 11:18:04 Ubantu sshd[5650]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:04 Ubantu sshd[5650]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:18:05 Ubantu sshd[5650]: Failed password for invalid user test from 192.168.56.104 port 43242 ssh2
+Feb 01 11:18:06 Ubantu sshd[5650]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:08 Ubantu sshd[5650]: Failed password for invalid user test from 192.168.56.104 port 43242 ssh2
+Feb 01 11:18:11 Ubantu sshd[5650]: Failed password for invalid user test from 192.168.56.104 port 43242 ssh2
+Feb 01 11:18:11 Ubantu sshd[5650]: Connection closed by invalid user test 192.168.56.104 port 43242 [preauth]
+Feb 01 11:18:11 Ubantu sshd[5650]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:18:11 Ubantu sshd[5659]: Invalid user test from 192.168.56.104 port 37142
+Feb 01 11:18:13 Ubantu sshd[5659]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:13 Ubantu sshd[5659]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:18:16 Ubantu sshd[5659]: Failed password for invalid user test from 192.168.56.104 port 37142 ssh2
+Feb 01 11:18:17 Ubantu sshd[5659]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:19 Ubantu sshd[5659]: Failed password for invalid user test from 192.168.56.104 port 37142 ssh2
+Feb 01 11:18:22 Ubantu sshd[5659]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:24 Ubantu sshd[5659]: Failed password for invalid user test from 192.168.56.104 port 37142 ssh2
+Feb 01 11:18:26 Ubantu sshd[5659]: Connection closed by invalid user test 192.168.56.104 port 37142 [preauth]
+Feb 01 11:18:26 Ubantu sshd[5659]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:18:26 Ubantu sshd[5664]: Invalid user test from 192.168.56.104 port 47010
+Feb 01 11:18:27 Ubantu sshd[5664]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:27 Ubantu sshd[5664]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:18:28 Ubantu sshd[5664]: Failed password for invalid user test from 192.168.56.104 port 47010 ssh2
+Feb 01 11:18:30 Ubantu sshd[5664]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:32 Ubantu sshd[5664]: Failed password for invalid user test from 192.168.56.104 port 47010 ssh2
+Feb 01 11:18:35 Ubantu sshd[5664]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:36 Ubantu sshd[5664]: Failed password for invalid user test from 192.168.56.104 port 47010 ssh2
+Feb 01 11:18:38 Ubantu sshd[5664]: Connection closed by invalid user test 192.168.56.104 port 47010 [preauth]
+Feb 01 11:18:38 Ubantu sshd[5664]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:18:38 Ubantu sshd[5668]: Invalid user test from 192.168.56.104 port 43136
+Feb 01 11:18:40 Ubantu sshd[5668]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:18:40 Ubantu sshd[5668]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:18:42 Ubantu sshd[5668]: Failed password for invalid user test from 192.168.56.104 port 43136 ssh2
+Feb 01 11:20:42 Ubantu sshd[5683]: Invalid user test from 192.168.56.104 port 56578
+Feb 01 11:20:43 Ubantu sshd[5683]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:20:43 Ubantu sshd[5683]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:20:46 Ubantu sshd[5683]: Failed password for invalid user test from 192.168.56.104 port 56578 ssh2
+Feb 01 11:20:48 Ubantu sshd[5683]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:20:50 Ubantu sshd[5683]: Failed password for invalid user test from 192.168.56.104 port 56578 ssh2
+Feb 01 11:20:51 Ubantu sshd[5683]: Failed password for invalid user test from 192.168.56.104 port 56578 ssh2
+Feb 01 11:20:51 Ubantu sshd[5683]: Connection closed by invalid user test 192.168.56.104 port 56578 [preauth]
+Feb 01 11:20:51 Ubantu sshd[5683]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:20:51 Ubantu sshd[5685]: Invalid user test from 192.168.56.104 port 42988
+Feb 01 11:20:53 Ubantu sshd[5685]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:20:53 Ubantu sshd[5685]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:20:54 Ubantu sshd[5685]: Failed password for invalid user test from 192.168.56.104 port 42988 ssh2
+Feb 01 11:20:58 Ubantu sshd[5685]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:20:59 Ubantu sshd[5685]: Failed password for invalid user test from 192.168.56.104 port 42988 ssh2
+Feb 01 11:21:03 Ubantu sshd[5685]: pam_unix(sshd:auth): check pass; user unknown
+Feb 01 11:21:05 Ubantu sshd[5685]: Failed password for invalid user test from 192.168.56.104 port 42988 ssh2
+Feb 01 11:21:06 Ubantu sshd[5685]: Connection closed by invalid user test 192.168.56.104 port 42988 [preauth]
+Feb 01 11:21:06 Ubantu sshd[5685]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.104
+Feb 01 11:21:06 Ubantu sshd[5689]: Invalid user test from 192.168.56.104 port 42786
+Feb 01 11:21:08 Ubantu sshd[5689]: Connection closed by invalid user test 192.168.56.104 port 42786 [preauth]
