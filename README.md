@@ -32,14 +32,15 @@ This approach mirrors how SIEM correlation rules work under the hood.
 ##  Architecture
 
 Attacker (Kali Linux)
-↓
+        ↓
 Linux SSH Server
-↓
+        ↓
 /var/log/auth.log
-↓
+        ↓
 Python Detection Script
-↓
+        ↓
 Brute-Force Alert Output
+
 
 
 ---
